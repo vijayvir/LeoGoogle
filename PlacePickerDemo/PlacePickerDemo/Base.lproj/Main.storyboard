@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Present On-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlacePickerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCa-jN-HHp">
+                                <rect key="frame" x="57" y="155" width="262.5" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5F-fU-Lh1">
+                                        <rect key="frame" x="0.0" y="0.0" width="262.5" height="34"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6u-pJ-SqD" customClass="LeoAutoCompletionButton" customModule="PlacePickerDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="262.5" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <outlet property="presentOn" destination="BYZ-38-t0r" id="JmE-0s-MqP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="C5F-fU-Lh1" firstAttribute="leading" secondItem="TCa-jN-HHp" secondAttribute="leading" id="Ff3-Qq-z96"/>
+                                    <constraint firstItem="k6u-pJ-SqD" firstAttribute="top" secondItem="TCa-jN-HHp" secondAttribute="top" id="J4u-Tl-Qe9"/>
+                                    <constraint firstItem="k6u-pJ-SqD" firstAttribute="leading" secondItem="TCa-jN-HHp" secondAttribute="leading" id="Mz8-5T-rQM"/>
+                                    <constraint firstAttribute="trailing" secondItem="C5F-fU-Lh1" secondAttribute="trailing" id="PFY-dc-ZzI"/>
+                                    <constraint firstItem="C5F-fU-Lh1" firstAttribute="top" secondItem="TCa-jN-HHp" secondAttribute="top" id="Vsy-Y9-PiE"/>
+                                    <constraint firstAttribute="trailing" secondItem="k6u-pJ-SqD" secondAttribute="trailing" id="dgU-DX-JbZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="C5F-fU-Lh1" secondAttribute="bottom" id="r0F-WE-y3k"/>
+                                    <constraint firstAttribute="bottom" secondItem="k6u-pJ-SqD" secondAttribute="bottom" id="rjM-33-uV1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qW-Sq-Pfm">
+                                <rect key="frame" x="57" y="316" width="261" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FDZ-oj-eNA">
+                                        <rect key="frame" x="0.0" y="0.0" width="261" height="34"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3z-Q3-g2D" customClass="LeoAutoCompletionButton" customModule="PlacePickerDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="261" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <outlet property="presentOn" destination="BYZ-38-t0r" id="oKy-S3-hJt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FDZ-oj-eNA" firstAttribute="leading" secondItem="9qW-Sq-Pfm" secondAttribute="leading" id="0bb-pf-sLH"/>
+                                    <constraint firstAttribute="trailing" secondItem="FDZ-oj-eNA" secondAttribute="trailing" id="2ou-zF-VuD"/>
+                                    <constraint firstAttribute="bottom" secondItem="FDZ-oj-eNA" secondAttribute="bottom" id="3a3-EF-S6g"/>
+                                    <constraint firstAttribute="bottom" secondItem="g3z-Q3-g2D" secondAttribute="bottom" id="AKf-VP-mLy"/>
+                                    <constraint firstItem="g3z-Q3-g2D" firstAttribute="top" secondItem="9qW-Sq-Pfm" secondAttribute="top" id="BP9-l4-UVR"/>
+                                    <constraint firstAttribute="trailing" secondItem="g3z-Q3-g2D" secondAttribute="trailing" id="ueX-ft-JSD"/>
+                                    <constraint firstItem="g3z-Q3-g2D" firstAttribute="leading" secondItem="9qW-Sq-Pfm" secondAttribute="leading" id="wil-gc-IX4"/>
+                                    <constraint firstItem="FDZ-oj-eNA" firstAttribute="top" secondItem="9qW-Sq-Pfm" secondAttribute="top" id="xTL-1K-C4S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.58028827930000004" blue="0.46764956289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TCa-jN-HHp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.5" id="Ejp-Fr-ovi"/>
+                            <constraint firstItem="TCa-jN-HHp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hk6-zh-YX3"/>
+                            <constraint firstItem="TCa-jN-HHp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="jf4-F7-rQh"/>
+                            <constraint firstItem="9qW-Sq-Pfm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kh6-XC-8Cf"/>
+                            <constraint firstItem="g3z-Q3-g2D" firstAttribute="leading" secondItem="k6u-pJ-SqD" secondAttribute="leading" id="mFV-Oy-Kah"/>
+                            <constraint firstItem="9qW-Sq-Pfm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yrg-xD-Td5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnFromPlace" destination="g3z-Q3-g2D" id="sve-4X-l1e"/>
+                        <outlet property="btnToPlace" destination="k6u-pJ-SqD" id="ia5-0H-aui"/>
+                        <outlet property="txtFromPlace" destination="FDZ-oj-eNA" id="dOp-Lu-grc"/>
+                        <outlet property="txtPlaceName" destination="C5F-fU-Lh1" id="cok-Y9-GiV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="87.706146926536732"/>
+        </scene>
+    </scenes>
+</document>
