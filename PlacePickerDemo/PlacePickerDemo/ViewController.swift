@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         btnFromPlace.closureDidAutocompleteWith = {
             place in
-            
+            print("🐅🐅🐅🐅🐅🐅🐅",place.coordinate.latitude)
             self.txtFromPlace.text = place.name
         }
         

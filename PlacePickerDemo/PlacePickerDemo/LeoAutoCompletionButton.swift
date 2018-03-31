@@ -11,7 +11,7 @@ import GooglePlaces
 
 extension AppDelegate {
     func googlePlacesConfigure() {
-        GMSPlacesClient.provideAPIKey("SOME API KEY")
+        GMSPlacesClient.provideAPIKey("AIzaSyA0fsUa44bbtcu5SwuB7D2usCf9srpdT-I") // GraySoon
         
     }
 }
